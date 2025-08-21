@@ -1,4 +1,10 @@
 # Nuxt dev/build outputs
+raw/**
+!raw/**/*.md
+!raw/img/
+!raw/img/icons
+!raw/fonts
+
 .output
 .data
 .nuxt

@@ -7,11 +7,23 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+
+    "optimize-svg": "npx ts-node scripts/optimize-svg.ts",
+    "optimize-images": "npx ts-node scripts/optimize-images.ts",
+    "generate-sprite": "npx ts-node scripts/generate-sprite.ts",
+    "convert-fonts": "npx ts-node scripts/convert-fonts.ts",
+    "optimize:allImg": "pnpm run optimize-svg && pnpm run optimize-images"
   },
   "dependencies": {
     "nuxt": "^4.0.3",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@pinia/nuxt": "^0.11.2",
+    "pinia": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
