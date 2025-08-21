@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import "@/app/assets/styles/main.scss";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <NuxtLayout>

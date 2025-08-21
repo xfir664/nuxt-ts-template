@@ -1,76 +1,36 @@
-@use "./../variables.scss" as var;
+//CHECKBOX INPUT VARS
 
-$size-base-mob: 18px;
-$size-primary-mob: 18px;
-$size-secondary-mob: 18px;
+//BASE
 
-$height-base-mob: 23px;
-$height-primary-mob: 23px;
-$height-secondary-mob: 23px;
+$width-base-mobile: 16px;
+$width-base-tablet: 18px;
+$width-base-desktop: 20px;
 
-$size-base-tablet: 16px;
-$size-primary-tablet: 16px;
-$size-secondary-tablet: 16px;
-
+$height-base-mobile: 20px;
 $height-base-tablet: 20px;
-$height-primary-tablet: 20px;
-$height-secondary-tablet: 20px;
-
-$size-base-desktop: 16px;
-$size-primary-desktop: 16px;
-$size-secondary-desktop: 16px;
-
 $height-base-desktop: 20px;
-$height-primary-desktop: 20px;
-$height-secondary-desktop: 20px;
 
-$col-base: #ffffff;
-$col-base-hover: rgba($col-base, 1);
-$col-base-focus: rgba($col-base, 1);
-$col-base-click: rgba($col-base, 1);
-$col-base-disabled: rgba($col-base, 1);
-
-$col-base--active: #ffffff;
-$col-base-hover--active: rgba($col-base--active, 1);
-$col-base-focus--active: rgba($col-base--active, 1);
-$col-base-click--active: rgba($col-base--active, 1);
-$col-base-disabled--active: rgba($col-base--active, 1);
-
-$col-primary: #ffffff;
-$col-primary-hover: rgba($col-primary, 1);
-$col-primary-focus: rgba($col-primary, 1);
-$col-primary-click: rgba($col-primary, 0.3);
-$col-primary-disabled: rgba($col-primary, 1);
-
-$col-secondary: #ffffff;
-$col-secondary-hover: rgba($col-secondary, 1);
-$col-secondary-focus: rgba($col-secondary, 1);
-$col-secondary-click: rgba($col-secondary, 0.3);
-$col-secondary-disabled: rgba($col-secondary, 1);
-
-$col-primary--active: #ffffff;
-$col-primary-hover--active: rgba($col-primary, 1);
-$col-primary-focus--active: rgba($col-primary, 1);
-$col-primary-click--active: rgba($col-primary, 0.3);
-$col-primary-disabled--active: rgba($col-primary, 1);
-
-$col-secondary--active: #ffffff;
-$col-secondary-hover--active: rgba($col-secondary--active, 1);
-$col-secondary-focus--active: rgba($col-secondary--active, 1);
-$col-secondary-click--active: rgba($col-secondary--active, 0.3);
-$col-secondary-disabled--active: rgba($col-secondary--active, 1);
-
-$bg-base: #ffffff;
-$bg-base-hover: #ffffff;
-$bg-base-focus: #ffffff;
-$bg-base-click: #ffffff;
+$bg-base: #5b2a12;
+$bg-base-hover: #615048;
+$bg-base-focus: #615048;
+$bg-base-click: #756157;
 $bg-base-disabled: #e5e5e5;
 
-$bg-base--active: #756157;
+$bg-base--active: #d55211;
 $bg-base-hover--active: #615048;
 $bg-base-focus--active: #615048;
 $bg-base-click--active: #756157;
 $bg-base-disabled--active: #e5e5e5;
+
+//PRIMARY
+
+$width-primary-mobile: 18px;
+$width-primary-tablet: 20px;
+$width-primary-desktop: 16px;
+
+$height-primary-mobile: 22px;
+$height-primary-tablet: 24px;
+$height-primary-desktop: 20px;
 
 $bg-primary: #82b3d3;
 $bg-primary-hover: #68a2ca;
@@ -84,6 +44,16 @@ $bg-primary-focus--active: #6c9e42;
 $bg-primary-click--active: #7db54f;
 $bg-primary-disabled--active: #e5e5e5;
 
+//SECONDARY
+
+$width-secondary-mobile: 20px;
+$width-secondary-tablet: 24px;
+$width-secondary-desktop: 16px;
+
+$height-secondary-mobile: 24px;
+$height-secondary-tablet: 28px;
+$height-secondary-desktop: 20px;
+
 $bg-secondary: transparent;
 $bg-secondary-hover: transparent;
 $bg-secondary-focus: transparent;
@@ -95,40 +65,3 @@ $bg-secondary-hover--active: transparent;
 $bg-secondary-focus--active: transparent;
 $bg-secondary-click--active: transparent;
 $bg-secondary-disabled--active: transparent;
-
-:root {
-  --checkbox-size--base: #{$size-base-mob};
-  --checkbox-height--base: #{$height-base-mob};
-
-  --checkbox-size--primary: #{$size-primary-mob};
-  --checkbox-height--primary: #{$height-primary-mob};
-
-  --checkbox-size--secondary: #{$size-secondary-mob};
-  --checkbox-height--secondary: #{$height-secondary-mob};
-}
-
-@media screen and (min-width: var.$tablet-width) {
-  :root {
-    --checkbox-size--base: #{$size-base-tablet};
-    --checkbox-height--base: #{$height-base-tablet};
-
-    --checkbox-size--primary: #{$size-primary-tablet};
-    --checkbox-height--primary: #{$height-primary-tablet};
-
-    --checkbox-size--secondary: #{$size-secondary-tablet};
-    --checkbox-height--secondary: #{$height-secondary-tablet};
-  }
-}
-
-@media screen and (min-width: var.$desktop-width) {
-  :root {
-    --checkbox-size--base: #{$size-base-desktop};
-    --checkbox-height--base: #{$height-base-desktop};
-
-    --checkbox-size--primary: #{$size-primary-desktop};
-    --checkbox-height--primary: #{$height-primary-desktop};
-
-    --checkbox-size--secondary: #{$size-secondary-desktop};
-    --checkbox-height--secondary: #{$height-secondary-desktop};
-  }
-}
