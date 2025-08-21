@@ -1,0 +1,30 @@
+@use "mixins";
+@use "@/app/assets/styles/var.scss" as var;
+
+$font-base: "PT Sans";
+$font-primary: "PT Sans";
+$font-secondary: "PT Sans";
+
+$font-base-src: "./fonts/PTSans/ptsans-regular";
+$font-primary-src: "./fonts/PTSans/ptsans-bold";
+$font-secondary-src: "./fonts/PTSans/ptsans-bold";
+
+@include mixins.font-face(
+  $font-base,
+  400,
+  normal,
+  $font-base-src,
+  ("woff2", "woff", "ttf")
+);
+
+.font-base {
+  font-family: $font-base, "Arial", "sans-serif";
+}
+
+.font-primary {
+  font-family: $font-primary, "Arial", "sans-serif";
+}
+
+.font-secondary {
+  font-family: $font-secondary, "Arial", "sans-serif";
+}

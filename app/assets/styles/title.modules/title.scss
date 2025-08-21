@@ -1,0 +1,52 @@
+@use "./title.var.scss" as title;
+@use "@/app/assets/styles/var.scss" as var;
+
+.title {
+  &.base {
+    font-size: title.$size-base-mob;
+    line-height: title.$height-base-mob;
+    color: title.$col-base;
+
+    @media (min-width: var.$breakpoint-tablet) {
+      font-size: title.$size-base-tablet;
+      line-height: title.$height-base-tablet;
+    }
+
+    @media (min-width: var.$breakpoint-desktop) {
+      font-size: title.$size-base-desktop;
+      line-height: title.$height-base-desktop;
+    }
+  }
+
+  &.primary {
+    font-size: title.$size-primary-mob;
+    line-height: title.$height-primary-mob;
+    color: title.$col-primary;
+
+    @media (min-width: var.$breakpoint-tablet) {
+      font-size: title.$size-primary-tablet;
+      line-height: title.$height-primary-tablet;
+    }
+
+    @media (min-width: var.$breakpoint-desktop) {
+      font-size: title.$size-primary-desktop;
+      line-height: title.$height-primary-desktop;
+    }
+  }
+
+  &.secondary {
+    font-size: title.$size-secondary-mob;
+    line-height: title.$height-secondary-mob;
+    color: title.$col-secondary;
+
+    @media (min-width: var.$breakpoint-tablet) {
+      font-size: title.$size-secondary-tablet;
+      line-height: title.$height-secondary-tablet;
+    }
+
+    @media (min-width: var.$breakpoint-desktop) {
+      font-size: title.$size-secondary-desktop;
+      line-height: title.$height-secondary-desktop;
+    }
+  }
+}

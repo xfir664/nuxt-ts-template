@@ -1,0 +1,33 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src, $formats) {
+  $src-list: ();
+
+  @each $format in $formats {
+    @if $format == "woff2" {
+      $src-list: append(
+        $src-list,
+        url("#{$font-src}.woff2") format("woff2"),
+        comma
+      );
+    } @else if $format == "woff" {
+      $src-list: append(
+        $src-list,
+        url("#{$font-src}.woff") format("woff"),
+        comma
+      );
+    } @else if $format == "ttf" {
+      $src-list: append(
+        $src-list,
+        url("#{$font-src}.ttf") format("truetype"),
+        comma
+      );
+    }
+  }
+
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: $src-list;
+    font-display: swap;
+  }
+}

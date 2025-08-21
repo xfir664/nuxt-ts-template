@@ -1,0 +1,52 @@
+@use "./subtitle.var.scss" as subtitle;
+@use "@/app/assets/styles/var.scss" as var;
+
+.subtitle {
+  &.base {
+    font-size: subtitle.$size-base-mob;
+    line-height: subtitle.$height-base-mob;
+    color: subtitle.$col-base;
+
+    @media (min-width: var.$breakpoint-tablet) {
+      font-size: subtitle.$size-base-tablet;
+      line-height: subtitle.$height-base-tablet;
+    }
+
+    @media (min-width: var.$breakpoint-desktop) {
+      font-size: subtitle.$size-base-desktop;
+      line-height: subtitle.$height-base-desktop;
+    }
+  }
+
+  &.primary {
+    font-size: subtitle.$size-primary-mob;
+    line-height: subtitle.$height-primary-mob;
+    color: subtitle.$col-primary;
+
+    @media (min-width: var.$breakpoint-tablet) {
+      font-size: subtitle.$size-primary-tablet;
+      line-height: subtitle.$height-primary-tablet;
+    }
+
+    @media (min-width: var.$breakpoint-desktop) {
+      font-size: subtitle.$size-primary-desktop;
+      line-height: subtitle.$height-primary-desktop;
+    }
+  }
+
+  &.secondary {
+    font-size: subtitle.$size-secondary-mob;
+    line-height: subtitle.$height-secondary-mob;
+    color: subtitle.$col-secondary;
+
+    @media (min-width: var.$breakpoint-tablet) {
+      font-size: subtitle.$size-secondary-tablet;
+      line-height: subtitle.$height-secondary-tablet;
+    }
+
+    @media (min-width: var.$breakpoint-desktop) {
+      font-size: subtitle.$size-secondary-desktop;
+      line-height: subtitle.$height-secondary-desktop;
+    }
+  }
+}

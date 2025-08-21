@@ -1,0 +1,84 @@
+@use "@/app/assets/styles/var.scss" as var;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-color: var.$bg-page;
+  font-size: var.$size-base-mobile;
+  line-height: var.$height-base-mobile;
+  color: var.$color-base;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    font-size: var.$size-base-tablet;
+    line-height: var.$height-base-tablet;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    font-size: var.$size-base-desktop;
+    line-height: var.$height-base-desktop;
+  }
+}
+
+.container {
+  padding: 0 10px;
+  max-width: var.$breakpoint-desktop;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.error {
+  color: #ff5757;
+}
+
+.grid-column-full {
+  grid-column: 1 / -1;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

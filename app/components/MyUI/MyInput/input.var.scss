@@ -1,0 +1,98 @@
+@use "./../variables.scss" as var;
+
+$size-base-mob: 16px;
+$size-primary-mob: 16px;
+$size-secondary-mob: 16px;
+
+$height-base-mob: 20px;
+$height-primary-mob: 20px;
+$height-secondary-mob: 20px;
+
+$size-base-tablet: 16px;
+$size-primary-tablet: 16px;
+$size-secondary-tablet: 16px;
+
+$height-base-tablet: 20px;
+$height-primary-tablet: 20px;
+$height-secondary-tablet: 20px;
+
+$size-base-desktop: 18px;
+$size-primary-desktop: 16px;
+$size-secondary-desktop: 18px;
+
+$height-base-desktop: 24px;
+$height-primary-desktop: 20px;
+$height-secondary-desktop: 24px;
+
+$col-base: rgba(#000000, 1);
+$col-base-hover: rgba($col-base, 1);
+$col-base-focus: rgba($col-base, 1);
+$col-base-active: rgba($col-base, 1);
+$col-base-disabled: rgba(#000000, 0.3);
+
+$col-primary: rgba(#000000, 0.6);
+$col-primary-hover: rgba(#000000, 0.6);
+$col-primary-focus: rgba(#000000, 0.6);
+$col-primary-active: rgba(#000000, 0.6);
+$col-primary-disabled: rgba(#000000, 0.6);
+
+$col-secondary: rgba(#000000, 0.6);
+$col-secondary-hover: rgba(#e6e6e6, 0.6);
+$col-secondary-focus: rgba(#000000, 0.6);
+$col-secondary-active: rgba(#000000, 1);
+$col-secondary-disabled: rgba(#000000, 0.6);
+
+$bg-base: #f2f2f2;
+$bg-base-hover: rgba(#e6e6e6, 1);
+$bg-base-focus: rgba(#e6e6e6, 1);
+$bg-base-active: rgba($bg-base, 1);
+$bg-base-disabled: rgba($bg-base, 0.3);
+
+$bg-primary: rgba(#000000, 0.6);
+$bg-primary-hover: rgba(#000000, 0.6);
+$bg-primary-focus: rgba(#000000, 0.6);
+$bg-primary-active: rgba(#000000, 0.6);
+$bg-primary-disabled: rgba(#000000, 0.6);
+
+$bg-secondary: rgba(#000000, 0.6);
+$bg-secondary-hover: rgba(#000000, 0.6);
+$bg-secondary-focus: rgba(#000000, 0.6);
+$bg-secondary-active: rgba(#000000, 0.6);
+$bg-secondary-disabled: rgba(#000000, 0.6);
+
+:root {
+  --input-size--base: #{$size-base-mob};
+  --input-height--base: #{$height-base-mob};
+
+  --input-size--primary: #{$size-primary-mob};
+  --input-height--primary: #{$height-primary-mob};
+
+  --input-size--secondary: #{$size-secondary-mob};
+  --input-height--secondary: #{$height-secondary-mob};
+}
+
+@media screen and (min-width: var.$tablet-width) {
+  :root {
+    --input-size--base: #{$size-base-tablet};
+    --input-height--base: #{$height-base-tablet};
+
+    --input-size--primary: #{$size-primary-tablet};
+    --input-height--primary: #{$height-primary-tablet};
+
+    --input-size--secondary: #{$size-secondary-tablet};
+    --input-height--secondary: #{$height-secondary-tablet};
+  }
+}
+
+@media screen and (min-width: var.$desktop-width) {
+  :root {
+    --input-size--base: #{$size-base-desktop};
+    --input-height--base: #{$height-base-desktop};
+
+    --input-size--primary: #{$size-primary-desktop};
+    --input-height--primary: #{$height-primary-desktop};
+
+    --input-size--secondary: #{$size-secondary-desktop};
+    --input-height--secondary: #{$height-secondary-desktop};
+  }
+}
