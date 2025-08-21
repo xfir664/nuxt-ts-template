@@ -5,7 +5,7 @@ const ttf2woff = require("ttf2woff");
 
 // Конфигурация
 const INPUT_DIR = path.join(__dirname, "../raw/fonts");
-const OUTPUT_DIR = path.join(__dirname, "../src/app/fonts");
+const OUTPUT_DIR = path.join(__dirname, "../app/assets/fonts");
 const SUPPORTED_FORMATS = [".ttf", ".otf", ".woff", ".woff2", ".eot", ".svg"];
 
 async function convertFont(inputFile, outputDir, fileName) {

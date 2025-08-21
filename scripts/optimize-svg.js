@@ -5,7 +5,7 @@ const { optimize } = require("svgo");
 
 // Конфигурация
 const INPUT_DIR = path.join(__dirname, "../raw/img");
-const OUTPUT_DIR = path.join(__dirname, "../src/app/img");
+const OUTPUT_DIR = path.join(__dirname, "../app/assets/images");
 
 // Конфигурация SVGO
 const svgoConfig = {

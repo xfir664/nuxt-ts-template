@@ -2,7 +2,7 @@
 raw/**
 !raw/**/*.md
 !raw/img/
-!raw/img/icons
+!raw/icons/
 !raw/fonts
 
 .output

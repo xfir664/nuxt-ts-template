@@ -3,8 +3,8 @@ const path = require("path");
 const glob = require("fast-glob");
 const { optimize } = require("svgo");
 
-const ICONS_DIR = path.join(__dirname, "../src/app/icon");
-const OUTPUT_DIR = path.join(__dirname, "../public");
+const ICONS_DIR = path.join(__dirname, "../raw/icons");
+const OUTPUT_DIR = path.join(__dirname, "../app/sprites");
 const SPRITE_PATH = path.join(OUTPUT_DIR, "sprite.svg");
 
 async function generateSprite() {
@@ -13,7 +13,7 @@ async function generateSprite() {
   try {
     // Проверяем существование директории
     await fs.access(ICONS_DIR);
-    const files = await glob(["src/app/icon/*.svg"], {
+    const files = await glob(["*.svg"], {
       absolute: true,
       cwd: process.cwd(),
     });

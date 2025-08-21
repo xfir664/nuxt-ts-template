@@ -5,7 +5,7 @@ const sharp = require("sharp");
 
 // Конфигурация
 const INPUT_DIR = path.join(__dirname, "../raw/img");
-const OUTPUT_DIR = path.join(__dirname, "../src/app/img");
+const OUTPUT_DIR = path.join(__dirname, "../app/assets/images");
 const SUPPORTED_FORMATS = [".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".webp"];
 const QUALITY = 80; // Качество WebP (0-100)
 const RETINA_SCALES = [1, 2]; // 1x и 2x
