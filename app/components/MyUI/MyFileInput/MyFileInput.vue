@@ -6,13 +6,23 @@ const props = defineProps<{
   styles?: CSSProperties;
   className?: string;
   variant?: "base" | "primary" | "secondary";
+  isActive?: boolean;
 }>();
+
+const emit = defineEmits<{
+  (e: "update:modelValue", value: string): void;
+}>();
+
+const handleChange = (e: Event) => {
+  emit("update:modelValue", (e.target as HTMLInputElement).value);
+};
 
 const classes = computed(() => {
   return [
     "file-input",
     props.className && props.className,
     props.variant && `file-input--${props.variant}`,
+    props.isActive && `active`,
   ]
     .filter(Boolean)
     .join(" ");
@@ -25,6 +35,7 @@ const classes = computed(() => {
     :disabled="props.disabled"
     :class="classes"
     :style="props.styles"
+    @change="handleChange"
   />
 </template>
 
@@ -41,6 +52,8 @@ const classes = computed(() => {
   -o-appearance: none;
   appearance: none;
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
   &--base {
     width: file-input.$width-base-mobile;
