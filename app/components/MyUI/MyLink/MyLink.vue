@@ -17,7 +17,9 @@ const classes = computed(() => {
     props.className && props.className,
     props.variant && `my-link--${props.variant}`,
     props.isActive && `active`,
-  ];
+  ]
+    .filter(Boolean)
+    .join(" ");
 });
 </script>
 

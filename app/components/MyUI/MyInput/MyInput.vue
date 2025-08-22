@@ -21,7 +21,9 @@ const classes = computed(() => {
     props.className && props.className,
     props.variant && `my-input--${props.variant}`,
     props.isActive && `active`,
-  ];
+  ]
+    .filter(Boolean)
+    .join(" ");
 });
 
 const emit = defineEmits<{

@@ -5,14 +5,11 @@ const props = defineProps<{
   className?: string;
   styles?: CSSProperties;
   variant?: "base" | "primary" | "secondary";
-  disabled?: boolean;
 }>();
 
 const classes = computed(() => {
-  return [
-    "my-radio-input",
-    props.className && props.className,
-    props.variant && `my-radio-input--${props.variant}`,
+  return ["my-select-option", props.className && props.className,
+    props.variant && `my-select-option--${props.variant}`,
   ]
     .filter(Boolean)
     .join(" ");
@@ -20,12 +17,10 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <input
-    type="radio"
-    :class="classes"
-    :style="styles"
-    :disabled="disabled"
-  />
+  <option :class="classes" :style="styles">
+    <slot />
+  </option>
 </template>
 
-<style scoped></style>
+<style scoped >
+</style>
