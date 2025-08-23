@@ -1,13 +1,12 @@
-@use "mixins";
-@use "@/app/assets/styles/var.scss" as var;
+@use "./mixins.scss";
 
-$font-base: "PT Sans";
-$font-primary: "PT Sans";
-$font-secondary: "PT Sans";
+$font-base: "Anime Ace";
+$font-primary: "Anime Ace";
+$font-secondary: "Anime Ace";
 
-$font-base-src: "./fonts/PTSans/ptsans-regular";
-$font-primary-src: "./fonts/PTSans/ptsans-bold";
-$font-secondary-src: "./fonts/PTSans/ptsans-bold";
+$font-base-src: "/fonts/AnimeAce/AnimeAceV3";
+$font-primary-src: "/fonts/AnimeAce/AnimeAceV3";
+$font-secondary-src: "/fonts/AnimeAce/AnimeAceV3";
 
 @include mixins.font-face(
   $font-base,
@@ -17,14 +16,30 @@ $font-secondary-src: "./fonts/PTSans/ptsans-bold";
   ("woff2", "woff", "ttf")
 );
 
+// @include mixins.font-face(
+//   $font-base,
+//   400,
+//   normal,
+//   $font-primary-src,
+//   ("woff2", "woff", "ttf")
+// );
+
+// @include mixins.font-face(
+//   $font-base,
+//   400,
+//   normal,
+//   $font-secondary-src,
+//   ("woff2", "woff", "ttf")
+// );
+
 .font-base {
   font-family: $font-base, "Arial", "sans-serif";
 }
 
-.font-primary {
-  font-family: $font-primary, "Arial", "sans-serif";
-}
+// .font-primary {
+//   font-family: $font-primary, "Arial", "sans-serif";
+// }
 
-.font-secondary {
-  font-family: $font-secondary, "Arial", "sans-serif";
-}
+// .font-secondary {
+//   font-family: $font-secondary, "Arial", "sans-serif";
+// }

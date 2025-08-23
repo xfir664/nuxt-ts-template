@@ -53,6 +53,7 @@ const handleChange = (event: Event) => {
   -o-appearance: none;
   appearance: none;
   position: relative;
+  cursor: pointer;
 
   &--base {
     width: checkbox.$width-base-mobile;

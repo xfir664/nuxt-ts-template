@@ -1,8 +1,8 @@
 @use "./subtitle.var.scss" as subtitle;
-@use "@/app/assets/styles/var.scss" as var;
+@use "@/assets/styles/var.scss" as var;
 
 .subtitle {
-  &.base {
+  &--base {
     font-size: subtitle.$size-base-mob;
     line-height: subtitle.$height-base-mob;
     color: subtitle.$col-base;
@@ -18,7 +18,7 @@
     }
   }
 
-  &.primary {
+  &--primary {
     font-size: subtitle.$size-primary-mob;
     line-height: subtitle.$height-primary-mob;
     color: subtitle.$col-primary;
@@ -34,7 +34,7 @@
     }
   }
 
-  &.secondary {
+  &--secondary {
     font-size: subtitle.$size-secondary-mob;
     line-height: subtitle.$height-secondary-mob;
     color: subtitle.$col-secondary;

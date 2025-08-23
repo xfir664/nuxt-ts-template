@@ -1,8 +1,8 @@
 @use "./title.var.scss" as title;
-@use "@/app/assets/styles/var.scss" as var;
+@use "@/assets/styles/var.scss" as var;
 
 .title {
-  &.base {
+  &--base {
     font-size: title.$size-base-mob;
     line-height: title.$height-base-mob;
     color: title.$col-base;
@@ -18,7 +18,7 @@
     }
   }
 
-  &.primary {
+  &--primary {
     font-size: title.$size-primary-mob;
     line-height: title.$height-primary-mob;
     color: title.$col-primary;
@@ -34,7 +34,7 @@
     }
   }
 
-  &.secondary {
+  &--secondary {
     font-size: title.$size-secondary-mob;
     line-height: title.$height-secondary-mob;
     color: title.$col-secondary;

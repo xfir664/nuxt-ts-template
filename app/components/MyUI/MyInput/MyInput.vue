@@ -2,7 +2,7 @@
 import type { CSSProperties } from "vue";
 
 const props = defineProps<{
-  modelValue: string;
+  modelValue?: string;
   placeholder?: string;
   disabled?: boolean;
   required?: boolean;

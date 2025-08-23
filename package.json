@@ -8,10 +8,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "optimize-svg": "npx ts-node scripts/optimize-svg.ts",
-    "optimize-images": "npx ts-node scripts/optimize-images.ts",
-    "generate-sprite": "npx ts-node scripts/generate-sprite.ts",
-    "convert-fonts": "npx ts-node scripts/convert-fonts.ts",
+    "optimize-svg": "npx ts-node scripts/optimize-svg.js",
+    "optimize-images": "npx ts-node scripts/optimize-images.js",
+    "generate-sprite": "npx ts-node scripts/generate-sprite.js",
+    "convert-fonts": "npx ts-node scripts/convert-fonts.js",
     "optimize:allImg": "pnpm run optimize-svg && pnpm run optimize-images"
   },
   "dependencies": {

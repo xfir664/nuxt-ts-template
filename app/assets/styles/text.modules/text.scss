@@ -1,8 +1,8 @@
 @use "./text.var.scss" as text;
-@use "@/app/assets/styles/var.scss" as var;
+@use "@/assets/styles/var.scss" as var;
 
 .text {
-  &.base {
+  &--base {
     font-size: text.$size-base-mob;
     line-height: text.$height-base-mob;
     color: text.$col-base;
@@ -18,7 +18,7 @@
     }
   }
 
-  &.primary {
+  &--primary {
     font-size: text.$size-primary-mob;
     line-height: text.$height-primary-mob;
     color: text.$col-primary;
@@ -34,7 +34,7 @@
     }
   }
 
-  &.secondary {
+  &--secondary {
     font-size: text.$size-secondary-mob;
     line-height: text.$height-secondary-mob;
     color: text.$col-secondary;

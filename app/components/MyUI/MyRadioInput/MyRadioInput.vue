@@ -52,23 +52,23 @@ const handleChange = () => {
   position: relative;
 
   &--base {
-    width: radion.$width-base-mobile;
-    height: radion.$height-base-mobile;
+    width: radio.$width-base-mobile;
+    height: radio.$height-base-mobile;
 
     &:hover {
-      background-color: radion.$bg-base-hover;
+      background-color: radio.$bg-base-hover;
     }
 
     &:focus-visible {
-      background-color: radion.$bg-base-focus;
+      background-color: radio.$bg-base-focus;
     }
 
     &:active {
-      background-color: radion.$bg-base-click;
+      background-color: radio.$bg-base-click;
     }
 
     &:disabled {
-      background-color: radion.$bg-base-disabled;
+      background-color: radio.$bg-base-disabled;
       cursor: not-allowed;
     }
 
@@ -79,58 +79,58 @@ const handleChange = () => {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: calc(radion.$width-base-mobile - 50%);
-        height: calc(radion.$height-base-mobile - 50%);
-        background-color: radion.$bg-base-checked;
+        width: calc(radio.$width-base-mobile - 50%);
+        height: calc(radio.$height-base-mobile - 50%);
+        background-color: radio.$bg-base-checked;
         border-radius: 50%;
       }
     }
 
     &.active {
-      background-color: radion.$bg-base--active;
+      background-color: radio.$bg-base--active;
       &:hover {
-        background-color: radion.$bg-base-hover--active;
+        background-color: radio.$bg-base-hover--active;
       }
 
       &:focus-visible {
-        background-color: radion.$bg-base-focus--active;
+        background-color: radio.$bg-base-focus--active;
       }
 
       &:active {
-        background-color: radion.$bg-base-click--active;
+        background-color: radio.$bg-base-click--active;
       }
 
       &:disabled {
-        background-color: radion.$bg-base-disabled--active;
+        background-color: radio.$bg-base-disabled--active;
         cursor: not-allowed;
       }
 
       &:checked {
         &::before {
-          background-color: radion.$bg-base-checked--active;
+          background-color: radio.$bg-base-checked--active;
         }
       }
     }
   }
 
   &--primary {
-    width: radion.$width-primary-mobile;
-    height: radion.$height-primary-mobile;
+    width: radio.$width-primary-mobile;
+    height: radio.$height-primary-mobile;
 
     &:hover {
-      background-color: radion.$bg-primary-hover;
+      background-color: radio.$bg-primary-hover;
     }
 
     &:focus-visible {
-      background-color: radion.$bg-primary-focus;
+      background-color: radio.$bg-primary-focus;
     }
 
     &:active {
-      background-color: radion.$bg-primary-click;
+      background-color: radio.$bg-primary-click;
     }
 
     &:disabled {
-      background-color: radion.$bg-primary-disabled;
+      background-color: radio.$bg-primary-disabled;
       cursor: not-allowed;
     }
 
@@ -141,59 +141,59 @@ const handleChange = () => {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: calc(radion.$width-primary-mobile - 50%);
-        height: calc(radion.$height-primary-mobile - 50%);
-        background-color: radion.$bg-primary-checked;
+        width: calc(radio.$width-primary-mobile - 50%);
+        height: calc(radio.$height-primary-mobile - 50%);
+        background-color: radio.$bg-primary-checked;
         border-radius: 50%;
       }
     }
 
     &.active {
-      background-color: radion.$bg-primary--active;
+      background-color: radio.$bg-primary--active;
 
       &:hover {
-        background-color: radion.$bg-primary-hover--active;
+        background-color: radio.$bg-primary-hover--active;
       }
 
       &:focus-visible {
-        background-color: radion.$bg-primary-focus--active;
+        background-color: radio.$bg-primary-focus--active;
       }
 
       &:active {
-        background-color: radion.$bg-primary-click--active;
+        background-color: radio.$bg-primary-click--active;
       }
 
       &:disabled {
-        background-color: radion.$bg-primary-disabled--active;
+        background-color: radio.$bg-primary-disabled--active;
         cursor: not-allowed;
       }
 
       &:checked {
         &::before {
-          background-color: radion.$bg-primary-checked--active;
+          background-color: radio.$bg-primary-checked--active;
         }
       }
     }
   }
 
   &--secondary {
-    width: radion.$width-secondary-mobile;
-    height: radion.$height-secondary-mobile;
+    width: radio.$width-secondary-mobile;
+    height: radio.$height-secondary-mobile;
 
     &:hover {
-      background-color: radion.$bg-secondary-hover;
+      background-color: radio.$bg-secondary-hover;
     }
 
     &:focus-visible {
-      background-color: radion.$bg-secondary-focus;
+      background-color: radio.$bg-secondary-focus;
     }
 
     &:active {
-      background-color: radion.$bg-secondary-click;
+      background-color: radio.$bg-secondary-click;
     }
 
     &:disabled {
-      background-color: radion.$bg-secondary-disabled;
+      background-color: radio.$bg-secondary-disabled;
       cursor: not-allowed;
     }
 
@@ -204,35 +204,35 @@ const handleChange = () => {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: calc(radion.$width-secondary-mobile - 50%);
-        height: calc(radion.$height-secondary-mobile - 50%);
-        background-color: radion.$bg-secondary-checked;
+        width: calc(radio.$width-secondary-mobile - 50%);
+        height: calc(radio.$height-secondary-mobile - 50%);
+        background-color: radio.$bg-secondary-checked;
         border-radius: 50%;
       }
     }
 
     &.active {
-      background-color: radion.$bg-secondary--active;
+      background-color: radio.$bg-secondary--active;
       &:hover {
-        background-color: radion.$bg-secondary-hover--active;
+        background-color: radio.$bg-secondary-hover--active;
       }
 
       &:focus-visible {
-        background-color: radion.$bg-secondary-focus--active;
+        background-color: radio.$bg-secondary-focus--active;
       }
       
       &:active {
-        background-color: radion.$bg-secondary-click--active;
+        background-color: radio.$bg-secondary-click--active;
       }
 
       &:disabled {
-        background-color: radion.$bg-secondary-disabled--active;
+        background-color: radio.$bg-secondary-disabled--active;
         cursor: not-allowed;
       }
 
       &:checked {
         &::before {
-          background-color: radion.$bg-secondary-checked--active;
+          background-color: radio.$bg-secondary-checked--active;
         }
       }
     }
@@ -240,37 +240,37 @@ const handleChange = () => {
 
   @media (min-width: var.$breakpoint-tablet) {
     &--base {
-      width: radion.$width-base-tablet;
-      height: radion.$height-base-tablet;
+      width: radio.$width-base-tablet;
+      height: radio.$height-base-tablet;
 
       &:checked {
         &::before {
-          width: calc(radion.$width-base-tablet - 50%);
-          height: calc(radion.$height-base-tablet - 50%);
+          width: calc(radio.$width-base-tablet - 50%);
+          height: calc(radio.$height-base-tablet - 50%);
         }
       }
     }
 
     &--primary {
-      width: radion.$width-primary-tablet;
-      height: radion.$height-primary-tablet;
+      width: radio.$width-primary-tablet;
+      height: radio.$height-primary-tablet;
 
       &:checked {
         &::before {
-          width: calc(radion.$width-primary-tablet - 50%);
-          height: calc(radion.$height-primary-tablet - 50%);
+          width: calc(radio.$width-primary-tablet - 50%);
+          height: calc(radio.$height-primary-tablet - 50%);
         }
       }
     }
 
     &--secondary {
-      width: radion.$width-secondary-tablet;
-      height: radion.$height-secondary-tablet;
+      width: radio.$width-secondary-tablet;
+      height: radio.$height-secondary-tablet;
 
       &:checked {
         &::before {
-          width: calc(radion.$width-secondary-tablet - 50%);
-          height: calc(radion.$height-secondary-tablet - 50%);
+          width: calc(radio.$width-secondary-tablet - 50%);
+          height: calc(radio.$height-secondary-tablet - 50%);
         }
       }
     }
@@ -278,37 +278,37 @@ const handleChange = () => {
 
   @media (min-width: var.$breakpoint-desktop) {
     &--base {
-      width: radion.$width-base-desktop;
-      height: radion.$height-base-desktop;
+      width: radio.$width-base-desktop;
+      height: radio.$height-base-desktop;
 
       &:checked {
         &::before {
-          width: calc(radion.$width-base-desktop - 50%);
-          height: calc(radion.$height-base-desktop - 50%);
+          width: calc(radio.$width-base-desktop - 50%);
+          height: calc(radio.$height-base-desktop - 50%);
         }
       }
     }
 
     &--primary {
-      width: radion.$width-primary-desktop;
-      height: radion.$height-primary-desktop;
+      width: radio.$width-primary-desktop;
+      height: radio.$height-primary-desktop;
 
       &:checked {
         &::before {
-          width: calc(radion.$width-primary-desktop - 50%);
-          height: calc(radion.$height-primary-desktop - 50%);
+          width: calc(radio.$width-primary-desktop - 50%);
+          height: calc(radio.$height-primary-desktop - 50%);
         }
       }
     }
 
     &--secondary {
-      width: radion.$width-secondary-desktop;
-      height: radion.$height-secondary-desktop;
+      width: radio.$width-secondary-desktop;
+      height: radio.$height-secondary-desktop;
 
       &:checked {
         &::before {
-          width: calc(radion.$width-secondary-desktop - 50%);
-          height: calc(radion.$height-secondary-desktop - 50%);
+          width: calc(radio.$width-secondary-desktop - 50%);
+          height: calc(radio.$height-secondary-desktop - 50%);
         }
       }
     }

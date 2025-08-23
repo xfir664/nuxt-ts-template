@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/var.scss" as var;
+@use "./var.scss" as var;
 
 *,
 *::before,
@@ -16,12 +16,16 @@ img {
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
   margin: 0;
   background-color: var.$bg-page;
   font-size: var.$size-base-mobile;
   line-height: var.$height-base-mobile;
   color: var.$color-base;
+
+  & > #__nuxt {
+    height: 100%;
+  }
 
   @media (min-width: var.$breakpoint-tablet) {
     font-size: var.$size-base-tablet;
@@ -32,42 +36,6 @@ body {
     font-size: var.$size-base-desktop;
     line-height: var.$height-base-desktop;
   }
-}
-
-.container {
-  padding: 0 10px;
-  max-width: var.$breakpoint-desktop;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main {
-  flex-grow: 1;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.list {
-  padding: 0;
-  list-style: none;
-}
-
-.error {
-  color: #ff5757;
-}
-
-.grid-column-full {
-  grid-column: 1 / -1;
-}
-
-.row-reverse {
-  flex-direction: row-reverse;
 }
 
 .visually-hidden {
@@ -81,4 +49,61 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container-breakpoint-desktop {
+  max-width: var.$breakpoint-desktop;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-0-10 {
+  padding: 0 10px;
+}
+
+.p-0-20 {
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
 }

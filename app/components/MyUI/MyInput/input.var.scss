@@ -28,6 +28,7 @@ $col-base-focus--active: rgba($col-base, 1);
 $col-base-click--active: rgba($col-base, 1);
 $col-base-disabled--active: rgba(#000000, 0.3);
 
+$bg-base--active: #d55211;
 $bg-base-hover--active: rgba(#e6e6e6, 1);
 $bg-base-focus--active: rgba(#e6e6e6, 1);
 $bg-base-click--active: rgba($bg-base, 1);
@@ -46,13 +47,13 @@ $height-primary-desktop: 24px;
 $col-primary: rgba(#000000, 0.6);
 $col-primary-hover: rgba(#000000, 0.6);
 $col-primary-focus: rgba(#000000, 0.6);
-$col-primary-active: rgba(#000000, 0.6);
+$col-primary-click: rgba(#000000, 0.6);
 $col-primary-disabled: rgba(#000000, 0.6);
 
 $bg-primary: rgba(#000000, 0.6);
 $bg-primary-hover: rgba(#000000, 0.6);
 $bg-primary-focus: rgba(#000000, 0.6);
-$bg-primary-active: rgba(#000000, 0.6);
+$bg-primary-click: rgba(#000000, 0.6);
 $bg-primary-disabled: rgba(#000000, 0.6);
 
 $col-primary--active: rgba(#000000, 0.6);
@@ -80,13 +81,13 @@ $height-secondary-desktop: 24px;
 $col-secondary: rgba(#000000, 0.6);
 $col-secondary-hover: rgba(#e6e6e6, 0.6);
 $col-secondary-focus: rgba(#000000, 0.6);
-$col-secondary-active: rgba(#000000, 1);
+$col-secondary-click: rgba(#000000, 1);
 $col-secondary-disabled: rgba(#000000, 0.6);
 
 $bg-secondary: rgba(#000000, 0.6);
 $bg-secondary-hover: rgba(#000000, 0.6);
 $bg-secondary-focus: rgba(#000000, 0.6);
-$bg-secondary-active: rgba(#000000, 0.6);
+$bg-secondary-click: rgba(#000000, 0.6);
 $bg-secondary-disabled: rgba(#000000, 0.6);
 
 $col-secondary--active: rgba(#000000, 0.6);

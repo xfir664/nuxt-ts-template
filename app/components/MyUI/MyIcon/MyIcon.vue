@@ -2,13 +2,18 @@
 import { computed, type CSSProperties } from "vue";
 
 const props = defineProps<{
-  id: string;
+  id?: string;
+  href?: string;
   className?: string;
   variant?: "base" | "primary" | "secondary";
   disabled?: boolean;
   isActive?: boolean;
   styles?: CSSProperties;
 }>();
+
+const path = computed(() => {
+  return props.href || `/sprites/sprite.svg#${props.id}`;
+});
 
 const classes = computed(() => {
   return [
@@ -25,7 +30,7 @@ const classes = computed(() => {
 
 <template>
   <svg :class="classes" :style="styles">
-    <use :href="`/sprites/sprite.svg#${id}`" />
+    <use :href="path" />
   </svg>
 </template>
 

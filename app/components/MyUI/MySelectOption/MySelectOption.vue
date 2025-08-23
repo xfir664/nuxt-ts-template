@@ -111,8 +111,8 @@ const classes = computed(() => {
     }
 
     &:disabled {
-      color: btn.$col-primary-disabled;
-      background-color: btn.$bg-primary-disabled;
+      color: my-select-option.$col-primary-disabled;
+      background-color: my-select-option.$bg-primary-disabled;
       cursor: not-allowed;
     }
 
