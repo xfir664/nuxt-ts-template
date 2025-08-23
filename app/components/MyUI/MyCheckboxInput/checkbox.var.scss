@@ -15,12 +15,14 @@ $bg-base-hover: #615048;
 $bg-base-focus: #615048;
 $bg-base-click: #756157;
 $bg-base-disabled: #e5e5e5;
+$bg-base-checked: #d55211;
 
 $bg-base--active: #d55211;
 $bg-base-hover--active: #615048;
 $bg-base-focus--active: #615048;
 $bg-base-click--active: #756157;
 $bg-base-disabled--active: #e5e5e5;
+$bg-base-checked--active: #d55211;
 
 //PRIMARY
 
@@ -37,12 +39,14 @@ $bg-primary-hover: #68a2ca;
 $bg-primary-focus: #68a2ca;
 $bg-primary-click: #82b3d3;
 $bg-primary-disabled: #e5e5e5;
+$bg-primary-checked: #7db54f;
 
 $bg-primary--active: #7db54f;
 $bg-primary-hover--active: #6c9e42;
 $bg-primary-focus--active: #6c9e42;
 $bg-primary-click--active: #7db54f;
 $bg-primary-disabled--active: #e5e5e5;
+$bg-primary-checked--active: #7db54f;
 
 //SECONDARY
 
@@ -59,9 +63,11 @@ $bg-secondary-hover: transparent;
 $bg-secondary-focus: transparent;
 $bg-secondary-click: transparent;
 $bg-secondary-disabled: transparent;
+$bg-secondary-checked: transparent;
 
 $bg-secondary--active: transparent;
 $bg-secondary-hover--active: transparent;
 $bg-secondary-focus--active: transparent;
 $bg-secondary-click--active: transparent;
 $bg-secondary-disabled--active: transparent;
+$bg-secondary-checked--active: transparent;

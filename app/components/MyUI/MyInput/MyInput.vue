@@ -51,6 +51,7 @@ const handleInput = (e: Event) => {
 
 <style scoped lang="scss">
 @use "./input.var.scss" as input;
+@use "@/assets/styles/var.scss" as var;
 
 .my-input {
   border: none;
@@ -218,6 +219,40 @@ const handleInput = (e: Event) => {
         color: input.$col-secondary-disabled--active;
         cursor: not-allowed;
       }
+    }
+  }
+
+  @media (min-width: var.$breakpoint-tablet) {
+    &--base {
+      font-size: input.$size-base-tablet;
+      line-height: input.$height-base-tablet;
+    }
+
+    &--primary {
+      font-size: input.$size-primary-tablet;
+      line-height: input.$height-primary-tablet;
+    }
+
+    &--secondary {
+      font-size: input.$size-secondary-tablet;
+      line-height: input.$height-secondary-tablet;
+    }
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    &--base {
+      font-size: input.$size-base-desktop;
+      line-height: input.$height-base-desktop;
+    }
+
+    &--primary {
+      font-size: input.$size-primary-desktop;
+      line-height: input.$height-primary-desktop;
+    }
+
+    &--secondary {
+      font-size: input.$size-secondary-desktop;
+      line-height: input.$height-secondary-desktop;
     }
   }
 }

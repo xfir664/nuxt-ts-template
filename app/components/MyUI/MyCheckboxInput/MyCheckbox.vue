@@ -84,8 +84,34 @@ const handleChange = (event: Event) => {
         transform: translate(-50%, -50%);
         width: calc(checkbox.$width-base-mobile - 50%);
         height: calc(checkbox.$height-base-mobile - 50%);
-        background-color: checkbox.$bg-base--active;
+        background-color: checkbox.$bg-base-checked;
         border-radius: 50%;
+      }
+    }
+
+    &.active {
+      background-color: checkbox.$bg-base--active;
+      &:hover {
+        background-color: checkbox.$bg-base-hover--active;
+      }
+
+      &:focus-visible {
+        background-color: checkbox.$bg-base-focus--active;
+      }
+
+      &:active {
+        background-color: checkbox.$bg-base-click--active;
+      }
+
+      &:disabled {
+        background-color: checkbox.$bg-base-disabled--active;
+        cursor: not-allowed;
+      }
+
+      &:checked {
+        &::before {
+          background-color: checkbox.$bg-base-checked--active;
+        }
       }
     }
   }
@@ -120,8 +146,35 @@ const handleChange = (event: Event) => {
         transform: translate(-50%, -50%);
         width: calc(checkbox.$width-primary-mobile - 50%);
         height: calc(checkbox.$height-primary-mobile - 50%);
-        background-color: checkbox.$bg-primary--active;
+        background-color: checkbox.$bg-primary-checked;
         border-radius: 50%;
+      }
+    }
+
+    &.active {
+      background-color: checkbox.$bg-primary--active;
+
+      &:hover {
+        background-color: checkbox.$bg-primary-hover--active;
+      }
+
+      &:focus-visible {
+        background-color: checkbox.$bg-primary-focus--active;
+      }
+
+      &:active {
+        background-color: checkbox.$bg-primary-click--active;
+      }
+
+      &:disabled {
+        background-color: checkbox.$bg-primary-disabled--active;
+        cursor: not-allowed;
+      }
+
+      &:checked {
+        &::before {
+          background-color: checkbox.$bg-primary-checked--active;
+        }
       }
     }
   }
@@ -156,8 +209,34 @@ const handleChange = (event: Event) => {
         transform: translate(-50%, -50%);
         width: calc(checkbox.$width-secondary-mobile - 50%);
         height: calc(checkbox.$height-secondary-mobile - 50%);
-        background-color: checkbox.$bg-secondary--active;
+        background-color: checkbox.$bg-secondary-checked;
         border-radius: 50%;
+      }
+    }
+
+    &.active {
+      background-color: checkbox.$bg-secondary--active;
+      &:hover {
+        background-color: checkbox.$bg-secondary-hover--active;
+      }
+
+      &:focus-visible {
+        background-color: checkbox.$bg-secondary-focus--active;
+      }
+
+      &:active {
+        background-color: checkbox.$bg-secondary-click--active;
+      }
+
+      &:disabled {
+        background-color: checkbox.$bg-secondary-disabled--active;
+        cursor: not-allowed;
+      }
+
+      &:checked {
+        &::before {
+          background-color: checkbox.$bg-secondary-checked--active;
+        }
       }
     }
   }
