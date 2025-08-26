@@ -56,7 +56,7 @@ const handleClick = () => {
 
   &--base {
     font-size: btn.$size-base-mobile;
-    height: btn.$height-base-mobile;
+    line-height: btn.$height-base-mobile;
     color: btn.$col-base;
     background-color: btn.$bg-base;
 
@@ -110,7 +110,7 @@ const handleClick = () => {
 
   &--primary {
     font-size: btn.$size-primary-mobile;
-    height: btn.$height-primary-mobile;
+    line-height: btn.$height-primary-mobile;
     color: btn.$col-primary;
     background-color: btn.$bg-primary;
 
@@ -164,7 +164,7 @@ const handleClick = () => {
 
   &--secondary {
     font-size: btn.$size-secondary-mobile;
-    height: btn.$height-secondary-mobile;
+    line-height: btn.$height-secondary-mobile;
     color: btn.$col-secondary;
     background-color: btn.$bg-secondary;
 
@@ -219,34 +219,34 @@ const handleClick = () => {
   @media (min-width: var.$breakpoint-tablet) {
     &--base {
       font-size: btn.$size-base-tablet;
-      height: btn.$height-base-tablet;
+      line-height: btn.$height-base-tablet;
     }
 
     &--primary {
       font-size: btn.$size-primary-tablet;
-      height: btn.$height-primary-tablet;
+      line-height: btn.$height-primary-tablet;
     }
 
     &--secondary {
       font-size: btn.$size-secondary-tablet;
-      height: btn.$height-secondary-tablet;
+      line-height: btn.$height-secondary-tablet;
     }
   }
 
   @media (min-width: var.$breakpoint-desktop) {
     &--base {
       font-size: btn.$size-base-desktop;
-      height: btn.$height-base-desktop;
+      line-height: btn.$height-base-desktop;
     }
 
     &--primary {
       font-size: btn.$size-primary-desktop;
-      height: btn.$height-primary-desktop;
+      line-height: btn.$height-primary-desktop;
     }
 
     &--secondary {
       font-size: btn.$size-secondary-desktop;
-      height: btn.$height-secondary-desktop;
+      line-height: btn.$height-secondary-desktop;
     }
   }
 }

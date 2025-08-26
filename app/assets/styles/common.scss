@@ -1,0 +1,84 @@
+@use "@/assets/styles/var.scss" as var;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container-breakpoint-desktop {
+  max-width: var.$breakpoint-desktop;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-0-10 {
+  padding: 0 10px;
+}
+
+.p-0-20 {
+  padding: 0 20px;
+}
+
+.p-0-24 {
+  padding: 0 24px;
+}
+
+.flex {
+  display: flex;
+
+  &-center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+
+  &-direction-column {
+    flex-direction: column;
+  }
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.grid {
+  display: grid;
+
+  &-center {
+    align-items: center;
+    justify-content: center;
+  }
+}

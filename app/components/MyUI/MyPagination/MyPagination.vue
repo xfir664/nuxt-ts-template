@@ -51,7 +51,7 @@ const handleClick = () => {
 
   &--base {
     font-size: pagination.$size-base-mobile;
-    height: pagination.$height-base-mobile;
+    line-height: pagination.$height-base-mobile;
     color: pagination.$col-base;
     background-color: pagination.$bg-base;
 
@@ -105,7 +105,7 @@ const handleClick = () => {
 
   &--primary {
     font-size: pagination.$size-primary-mobile;
-    height: pagination.$height-primary-mobile;
+    line-height: pagination.$height-primary-mobile;
     color: pagination.$col-primary;
     background-color: pagination.$bg-primary;
 
@@ -159,7 +159,7 @@ const handleClick = () => {
 
   &--secondary {
     font-size: pagination.$size-secondary-mobile;
-    height: pagination.$height-secondary-mobile;
+    line-height: pagination.$height-secondary-mobile;
     color: pagination.$col-secondary;
     background-color: pagination.$bg-secondary;
 
@@ -214,34 +214,34 @@ const handleClick = () => {
   @media (min-width: var.$breakpoint-tablet) {
     &--base {
       font-size: pagination.$size-base-tablet;
-      height: pagination.$height-base-tablet;
+      line-height: pagination.$height-base-tablet;
     }
 
     &--primary {
       font-size: pagination.$size-primary-tablet;
-      height: pagination.$height-primary-tablet;
+      line-height: pagination.$height-primary-tablet;
     }
 
     &--secondary {
       font-size: pagination.$size-secondary-tablet;
-      height: pagination.$height-secondary-tablet;
+      line-height: pagination.$height-secondary-tablet;
     }
   }
 
   @media (min-width: var.$breakpoint-desktop) {
     &--base {
       font-size: pagination.$size-base-desktop;
-      height: pagination.$height-base-desktop;
+      line-height: pagination.$height-base-desktop;
     }
 
     &--primary {
       font-size: pagination.$size-primary-desktop;
-      height: pagination.$height-primary-desktop;
+      line-height: pagination.$height-primary-desktop;
     }
 
     &--secondary {
       font-size: pagination.$size-secondary-desktop;
-      height: pagination.$height-secondary-desktop;
+      line-height: pagination.$height-secondary-desktop;
     }
   }
 }
